@@ -157,6 +157,11 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()}. ${siteConfig.nom
           }. CÉGEP Édouard-Montpetit.`,
       },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       // Décommenter et remplir pour activer l'indexation des pages par le moteur de recherche local
       // algolia: {
       //   appId: '',
