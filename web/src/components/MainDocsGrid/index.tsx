@@ -61,6 +61,9 @@ export default function MainDocsGrid() {
     if (className && className.includes("examen")) {
       return "var(--examen-bg)";
     }
+    if (className && className.includes("minitest")) {
+      return "var(--minitest-bg)";
+    }
     return "inherit";
   };
 

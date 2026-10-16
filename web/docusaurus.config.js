@@ -108,12 +108,30 @@ const config = {
             label: "Cours",
           },
           {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "labs",
+            label: "Laboratoires",
+          },
+          {
             // Mène au TP dont le nom (ex : « TP1 - ... ») est contenu dans le className
             // du prochain cours qui en mentionne un (ex : remise-tp1), sinon au premier TP
             type: "custom-tpCourant",
             position: "left",
             sidebarId: "tp",
             label: "Travaux Pratiques",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "tutos",
+            label: "Tutoriels",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "astuces",
+            label: "Trucs et astuces",
           },
         ],
       },
@@ -150,7 +168,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ["csharp", "java", "dart", "powershell"],
+        additionalLanguages: ["csharp", "java", "dart", "powershell", "json"],
       },
       metadata: [
         {

@@ -96,6 +96,12 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --examen-bg: var(--ifm-color-danger-contrast-background);
   --examen-font-color: var(--ifm-color-danger-contrast-foreground);
+  --examen-bg: var(--ifm-color-danger-contrast-background);
+  --examen-font-color: var(--ifm-color-danger-contrast-foreground);
+  --minitest-bg: var(--ifm-color-warning-contrast-background);
+  --minitest-font-color: var(--ifm-color-warning-contrast-foreground);
+  --minitest-bg: var(--ifm-color-warning-contrast-background);
+  --minitest-font-color: var(--ifm-color-warning-contrast-foreground);
   --remise-tp-bg: var(--ifm-color-success-contrast-background);
   --remise-tp-font-color: var(--ifm-color-success-contrast-foreground);
 }
@@ -597,6 +603,12 @@ html.mdx-page .main-wrapper > main {
   border-radius: 0.5rem;
 }
 
+.minitest {
+  background-color: var(--minitest-bg);
+  color: var(--minitest-font-color);
+  border-radius: 0.5rem;
+}
+
 [class*="remise-tp"]::after {
   border-radius: 0.5rem;
 }
@@ -639,4 +651,15 @@ html.mdx-page .main-wrapper > main {
   background: var(--remise-tp-bg);
   font-size: 0.75em;
   color: var(--remise-tp-font-color);
+}
+
+.tag-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.25rem 0.4rem;
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 1em;
 }

@@ -1,38 +1,42 @@
 ---
+title: Automatisation de systèmes (420-B74-RO)
 sidebar_position: 1
 slug: /
 hide_table_of_contents: true
 ---
 
-# Accueil
+Bienvenue dans le cours d'automatisation de systèmes. Dans ce cours, vous apprendrez à effectuer l'administration automatisée d'un parc informatique d'entreprise composé de postes de travail Windows, à l'aide du logiciel SCCM ainsi que de divers outils et techniques. Le cours sera principalement orienté Windows.
+
+Vous retrouverez sur ce site le résumé de chaque cours dans la section [Cours](/cours/01). Les notes de cours, quant à elles, se retrouvent dans la section [Notions](/notions/intro). Les protocoles de laboratoire se trouvent dans la section [Laboratoires](/labs/01). Finalement, les énoncés des différents TP à livrer dans ce cours sont consignés dans la section [Travaux pratiques](/tp/tp1). Il y a également plusieurs [tutoriels](/tutos/01) et [astuces](/astuces/01) qui sont mis à votre disposition.
+
+:::info[Pour me joindre]
+
+Mon nom est **Vincent Carrier** et j'enseigne ce cours à la session d'automne 2026. Mon bureau est situé au **E209**, près de la bibliothèque. Mes périodes de disponibilité sont inscrites dans Léa et sur mon horaire ci-dessous.
+
+Si vous souhaitez me rencontrer, **[prenez rendez-vous avec moi](https://outlook.office.com/bookwithme/user/77679fa1e6de41a5bf30d62968e4d612@cegepmontpetit.ca?anonymous&ismsaljsauthenabled&ep=plink)**.
+:::
 
 <DocsViewer
     tabs={[
     {
         id: "grid",
-        label: "Cours",
+        label: "Planification du cours",
         icon: "📋",
         component: <MainDocsGrid />,
         // Les titres et les sous-titres sont définis dans les attributs "title" et "description" de chaque document des cours.
     }, 
     {
-        id: "calendar-prof1",
-        label: "Prof 1", // Modifier pour le nom de l'enseignant
+        id: "Calendrier",
+        label: "Calendrier des séances", // Modifier pour le nom de l'enseignant
         icon: "📅",
-        component: <MainDocsCalendar professorName="Prof 1" />, // Doit matcher le nom du professeur qui est dans l'attribut "calendrier" des cours qui sont dans sidebar.js
-    },
-    {
-        id: "calendar-prof2",
-        label: "Prof 2",  // Modifier pour le nom de l'enseignant
-        icon: "📅",
-        component: <MainDocsCalendar professorName="Prof 2" />, // Doit matcher le nom du professeur qui est dans l'attribut "calendrier" des cours qui sont dans sidebar.js
+        component: <MainDocsCalendar professorName="Vincent Carrier" />, // Doit matcher le nom du professeur qui est dans l'attribut "calendrier" des cours qui sont dans sidebar.js
     },
     //* Ajouter d'autres enseignants ici. Voir sidebar.js pour configurer les calendriers.
     {
-        id: "horaire-profx",
-        label: "Horaire Prof X",  // Modifier pour le nom de l'enseignant
-        icon: "🎈",
-        component: <WeeklySchedule title="Professeur X" dataUrl="/horaire_profx.json" />
+        id: "horaire",
+        label: "Horaire du professeur",  // Modifier pour le nom de l'enseignant
+        icon: "💼",
+        component: <WeeklySchedule title="Horaire de Vincent Carrier" dataUrl="/horaire_a26_vincent.json" />
     },
     ]}
     defaultTabId="grid"
