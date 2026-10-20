@@ -22,10 +22,12 @@ interface CalendarDay {
 
 interface MainDocsCalendarProps {
   professorName: string;
+  hideGroup?: boolean;
 }
 
 export default function MainDocsCalendar({
   professorName,
+  hideGroup = false,
 }: MainDocsCalendarProps) {
   const [docs, setDocs] = useState<any[]>([]);
   const [meta, setMeta] = useState<any[]>([]);
@@ -132,7 +134,9 @@ export default function MainDocsCalendar({
           const [groupe, date] = Object.entries(groupeObj)[0];
           events.push({
             id: doc.id, // Utiliser directement l'ID du document
-            title: `${groupe} - ${resolveDocTitle(doc)}`,
+            title: hideGroup
+              ? resolveDocTitle(doc)
+              : `${groupe} - ${resolveDocTitle(doc)}`,
             description: doc?.description || "",
             date: date as string,
             className: doc._sidebarClassName,
@@ -144,7 +148,7 @@ export default function MainDocsCalendar({
       }
     });
     setCalendarEvents(events);
-  }, [meta, professorName]);
+  }, [meta, professorName, hideGroup]);
 
   const handleEventClick = (event: CalendarEvent) => {
     // Trouver le document correspondant
