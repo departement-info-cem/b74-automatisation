@@ -10,7 +10,9 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2026-10-20"}],
         },
-        tooltip: "visible" // Valeurs possibles visible ou cache, valeur par défaut "visible"
+        tooltip: "visible", // Valeurs possibles visible ou cache, valeur par défaut "visible"
+        avancementLabel: "TP1 - ",
+        avancement: 0.0,
       }
     },
     {
@@ -20,6 +22,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2026-10-27"}],
         },
+        avancementLabel: "TP1 - ",
+        avancement: 0.5,
       }
     },
     {
@@ -29,8 +33,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2026-11-03"}],
         },
-        //avancementLabel: "TP1 - Créé",
-        //avancement: 0.0
+        avancementLabel: "TP1 - ",
+        avancement: 1.0,
       },
       "className": "remise-tp1"
     },
@@ -41,8 +45,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2026-11-10"}],
         },
-        //avancementLabel: "TP1",
-        //avancement: 0.1
+        avancementLabel: "TP2 - ",
+        avancement: 0.25,
       },
       "className": "minitest"
     },
@@ -53,8 +57,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2026-11-17"}],
         },
-        //avancementLabel: "TP1",
-        //avancement: 0.25
+        avancementLabel: "TP2 - ",
+        avancement: 0.5,
       }
     },
     {
@@ -64,8 +68,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2026-11-24"}],
         },
-        //avancementLabel: "TP1",
-        //avancement: 0.5
+        avancementLabel: "TP2 - ",
+        avancement: 0.75,
       }
     },
     {
@@ -75,8 +79,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2026-12-01"}],
         },
-        //avancementLabel: "TP1",
-        //avancement: 0.75
+        avancementLabel: "TP2 - ",
+        avancement: 1.0,
       },
       "className": "remise-tp2"
     },
@@ -87,8 +91,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2026-12-08"}],
         },
-        //avancementLabel: "TP1",
-        //avancement: 1
+        avancementLabel: "TP3 - ",
+        avancement: 0.25,
       },
       "className": "minitest"
     },
@@ -99,8 +103,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2026-12-15"}],
         },
-        //avancementLabel: "TP2 - Créé",
-        //avancement: 0.0
+        avancementLabel: "TP3 - ",
+        avancement: 0.5,
       },
     },
     {
@@ -110,8 +114,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2027-01-05"}],
         },
-        //avancementLabel: "TP2",
-        //avancement: 0.1
+        avancementLabel: "TP3 - ",
+        avancement: 0.75,
       }
     },
     {
@@ -121,8 +125,8 @@ const sidebars = {
         calendrier: {
           "Vincent Carrier": [{"6151": "2027-01-12"}],
         },
-        //avancementLabel: "TP2",
-        //avancement: 0.3
+        avancementLabel: "TP3 - ",
+        avancement: 1.0,
       },
       "className": "remise-tp3"
     },
