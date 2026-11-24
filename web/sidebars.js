@@ -77,7 +77,7 @@ const sidebars = {
       id: "cours/07",
       customProps: {
         calendrier: {
-          "Vincent Carrier": [{"6151": "2026-12-01"}],
+          "Vincent Carrier": [{"6151": "2026-11-27"}],
         },
         avancementLabel: "TP2 - ",
         avancement: 1.0,
@@ -89,7 +89,7 @@ const sidebars = {
       id: "cours/08",
       customProps: {
         calendrier: {
-          "Vincent Carrier": [{"6151": "2026-12-08"}],
+          "Vincent Carrier": [{"6151": "2026-12-01"}],
         },
         avancementLabel: "TP3 - ",
         avancement: 0.25,
